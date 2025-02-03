@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav-header.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="project-list.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="placeholder-logo.png" alt="Logo">
+        <h1>Your Name</h1>
+        <p>Designing intuitive user experiences</p> -->
+    
+
+        <div class="nav">
+            <a href="http://www.amandalynnwilliams.com/"><img class="header-title" src="https://res.cloudinary.com/dxefmitas/image/upload/v1545940683/aw-logo_khyvsk.png"></a>
+        
+            <div class="nav-container">
+                <a class="nav-item" href="https://dribbble.com/amandalynn1231" target="_blank">dribbble</a>
+                <!-- <a class="nav-item" href="https://www.behance.net/amandalynnwilliams" target="_blank">behance -->
+                 <!-- <img class="nav-item" src="http://res.cloudinary.com/dxefmitas/image/upload/v1503868893/benhance-icon_tey7un.png"> -->
+                </a>
+                <a class="nav-item" href="https://www.linkedin.com/in/amandalynn1231/" target="_blank">linkedin
+                     <!-- <img class="nav-item" src="http://res.cloudinary.com/dxefmitas/image/upload/v1503868893/linkedin-icon_sbwudo.png"> -->
+                </a>
+                <a class="nav-item" id='text-link' href="https://res.cloudinary.com/dxefmitas/image/upload/v1738593930/resume2025_au9kxi.pdf" target="_blank">resume</a>
+            </div>
+        </div>
+        
+        <div class="intro-copy">
+            <h1>Amanda Williams.</h1>
+            <p class="summary">Hi! I'm a Lead Product Designer at <a class="link" href="https://www.concretely.co/">Concretely</a> by <a class="link" href="https://www.holcim.com/">Holcim</a>, 
+                where my focus is building a continuous discovery process that allows product and design to stay close to 
+                users and keep priorities well-informed. Previously, I was a founding designer and product manager at 
+                <a class="link" href="https://airworks.io/">AirWorks</a>, and held UX design roles at fintech company <a class="link" href="https://www.ncino.com/en-US">nCino</a>, 
+                design agency <a class="link" href="https://www.adkgroup.com/">ADK Group</a>, and healthtech product NutriSavings by 
+                employee benefits company <a class="link" href="https://edenredbenefits.com/">Edenred</a>. My career highlights include 
+                designing MVPs and building design foundations as the founding designer, leading product launches, and 
+                creating scalable design systems. My approach combines strategic thinking, collaborative leadership, and 
+                a passion for innovation to solve complex user challenges. </p>
+            <!-- <p class="summary">I'm a Lead UX Designer at Holcim working on a web and mobile app called Concretely.  
+                With a decade of experience in UX design across diverse industries such as Architecture Engineering Conctruction, 
+                fintech, health tech, and design agencies, I specialize in building intuitive, user-centered digital experiences</p> -->
+        </div>
+
+    </header>
+
+    <main class="project-list gridz">
+        <div class="project-box">
+            <div class="project-description">
+                <h2 class="project-title">Concretely Platform</h2>
+                <div class="description">
+                    <p>Platform that connects ready mix concrete providers and their customers. Facilitates better communication and planning for concrete orders.</p>
+                    <ul class="achievement-list">
+                        <li>Web app for concrete providers; web and mobile apps for contractors</li>
+                        <li>Full workflow for managing and tracking order placement and fullfillment in real time between concrete providers and their customers</li>
+                        <li>Notification and messaging experience tied to projects and orders</li>
+                        <li>Product discovery processes and requirement research and documentation</li>
+                    </ul>
+                    <p class="skillz">Product Discovery / UX & UI Design / Information Architecture / Product Requirements / Agile / Design System</p>
+                </div>
+                <a class="button-primary" href="https://www.concretely.co/">More about Concretely</a>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1737927011/mobile-mockups_saxb6f.png" alt="Project One Screenshot 1">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1737928355/web-orders_hluzvg.png" alt="Project One Screenshot 2">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738362340/All_Orders_-_Dispatch_Alerts_undzia.png" alt="Concretely Orders and dispatch alerts panel open">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738028458/Dispatch_Updates_User_Flow_-_Dispatch_Notifications_User_Flow_zbn0bz.jpg" alt="Project One Screenshot 3">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738362262/dispatch-alerts_uaslhp.gif" alt="Concretely Dispatch Alerts Video">
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">&#8249;</button>
+                    <button class="next">&#8250;</button>
+                </div>
+                <div class="carousel-breadcrumbs">
+                    <button class="active" data-index="0"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                    <button data-index="3"></button>
+                    <button data-index="4"></button>
+                </div>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-description">
+                <h2 class="project-title">AirWorks Web App</h2>
+                <div class="description">
+                    <p>Uses AI to build CAD models from aerial imagery. I was the founding designer.</p>
+                    <ul class="achievement-list">
+                        <li>Designed MVP for product launch and foundational design system</li>
+                        <li>Project ordering experience</li>
+                        <li>CAD file viewing and exporting experience</li>
+                        <li>Product discovery, including a beta test for an in-app CAD editing experience</li>
+                        <!-- <li>Managed incoming customer feedback and business objectives to continually assess product market fit and build product roadmaps with executive team.</li> -->
+                    </ul>
+                    <p class="skillz">Product Discovery Research / UX & UI Design / Agile / Product Management / Design System</p>
+                </div>
+                <a class="button-primary" href="https://airworks.io/">More about AirWorks</a>
+            </div>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1736054558/Dashboard-Upload_Errors_Notifications_Copy_mslx9z.png" alt="Project One Screenshot 1">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1736054559/Upload_Data_Set-Site_Details_Ortho_o1z66h.png" alt="Project One Screenshot 2">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1736054559/2D_Output_t7dfy2.png" alt="Project One Screenshot 3">
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">&#8249;</button>
+                    <button class="next">&#8250;</button>
+                </div>
+                <div class="carousel-breadcrumbs">
+                    <button class="active" data-index="0"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                </div>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-description">
+                <h2 class="project-title">nCino Commercial Banking Platform</h2>
+                <div class="description">
+                    <p>Tool built on Salesforce to help banks and financial institutions provide their customers a better experience
+                        by allowing these banks to manage commercial customer accounts in one place. Streamlines loan processing, 
+                        account opening, and complaince audits. I worked on porfolios for Credit Analysis, Portfolio Analytics, 
+                        and International Banking</p>
+                    <ul class="achievement-list">
+                        <li>Rent roll analytics feature for commercial real estate loan underwriting</li>
+                        <li>Importing debt schedule and averaging periods features for commercial loan underwriting</li>
+                        <li>Policy administration feature to enable banks to track their loan, deposit, and application data to
+                            ultimately manage compliance and risk withing the bank's portfolio</li>
+                    </ul>
+                    <p class="skillz"> UX & UI Design / UX Research / User Testing / Design Systems</p>
+                </div>
+                <a class="button-primary" href="https://www.ncino.com/our-platform/commercial-banking">More about nCino</a>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278057/rent-roll-video_n1xzwl.gif" alt="Project One Screenshot 1">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278281/user-flow_w5359x.png" alt="Project One Screenshot 2">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278402/Add_Rule_tqtytb.png" alt="Project One Screenshot 3">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278401/Create_new_policy_yu14w5.png" alt="Project One Screenshot 3">
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">&#8249;</button>
+                    <button class="next">&#8250;</button>
+                </div>
+                <div class="carousel-breadcrumbs">
+                    <button class="active" data-index="0"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                    <button data-index="3"></button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="project-box">
+            <div class="project-description">
+                <h2 class="project-title">NutriSavings Mobile App</h2>
+                <div class="description">
+                    <p>Health benefits program that educates people on how to make healthier grocery choices and rewards them with cash back on healthy food purchases. I led all UX and UI design for the mobile app experience.</p>
+                    <ul class="achievement-list">
+                        <li>Data visualization and dashboards</li>
+                        <li>Scan and search food catalog customers can use in store</li>
+                        <li>Track purchases, their nutritional scores, and cash back transactions</li>
+                        <li>Digital coupon clipping and shopping list creation</li>
+                    </ul>
+                    <p class="skillz">UX & UI Design / UX Research / Animation / Data Visualization</p>
+                </div>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="http://res.cloudinary.com/dxefmitas/image/upload/c_scale,w_3541/v1494866310/ns-mobile-app_kmzoip.jpg" alt="Nutrisavings Image 1">
+                    <img src="http://res.cloudinary.com/dxefmitas/image/upload/v1500242214/dashboard-screens_hzlgsw.png" alt="Nutrisavings Image 2">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1500493916/cash-rewards-screens-noBG_jxtchd.png" alt="Nutrisavings Image 3">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1503791701/profile-wires_ow8p3m.png" alt="Nutrisavings Image 4">
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">&#8249;</button>
+                    <button class="next">&#8250;</button>
+                </div>
+                <div class="carousel-breadcrumbs">
+                    <button class="active" data-index="0"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                    <button data-index="3"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-description">
+                <h2 class="project-title">ADK Group Web Design</h2>
+                <div class="description">
+                    <p>Digital design and development agency. Produced designs and front-end development of wordpress templates
+                        for over 24 clients during my tenure.
+                    </p>
+                    <ul class="achievement-list">
+                        <li>Clients included Mass General Hospital, Brigham Women's Hospital, Santander, JLL subsidiaries; and 
+                            local Boston companies such as Improv Asylum, Columbus Hospitality Group, and Sleeping Dog Properties.
+                        </li>
+                        <li>Web UX/UI design</li>
+                        <li>Logos and branding</li>
+                        <li>Animations</li>
+                        <li>Front-end development for Wordpress templates</li>
+                    </ul>
+                    <p class="skillz">Web Design / UX & UI Design / Animation / Front-end Development / Wordpress</p>
+                </div>
+                <a class="button-primary" href="https://www.adkgroup.com/">More about ADK Group</a>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/IA-portfolio-display_l8p4oj.jpg" alt="Project One Screenshot 1">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1545937482/improv-asylum-logo-1090_iwcmhg.jpg" alt="Project One Screenshot 2">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1546812236/1.Home_page_c1f9wv.png" alt="Project One Screenshot 3">
+                    <img src="./images/jll-scroll.gif" alt="Project One Screenshot 3">
+                    <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738351662/6c.Contact_Form-Location_pgt7jb.jpg" alt="Project One Screenshot 3">
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">&#8249;</button>
+                    <button class="next">&#8250;</button>
+                </div>
+                <div class="carousel-breadcrumbs">
+                    <button class="active" data-index="0"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                    <button data-index="3"></button>
+                    <button data-index="4"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class=""shots>
+            <h2 class="project-title">Random Design Shots</h2>
+            <div class="grid-container">
+                <div class="grid">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1548730987/shows-sign-animation_s7qmuh.gif" alt="Random 1">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1738128625/scarletHollowDribble_xpmu3c.png" alt="Random 2">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1738128685/Artboard_9_mjhnsx.png" alt="Random 3">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1738270344/home-skillprint_jaakmu.gif" alt="Random 4">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1738364451/airworks-web-700_ncaxb7.png" alt="Random 6">
+                    <img class="shot" src="https://res.cloudinary.com/dxefmitas/image/upload/v1738363559/boston-skyline-2_vyqspn.gif" alt="Random 5">
+                    <!-- <img class="shot" src="https://source.unsplash.com/random/300x300?sig=7" alt="Random 7">
+                    <img class="shot" src="https://source.unsplash.com/random/300x300?sig=8" alt="Random 8">
+                    <img class="shot" src="https://source.unsplash.com/random/300x300?sig=9" alt="Random 9"> -->
+                </div>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <!-- <p>&copy; 2025 Your Name. Built with <a href="#">Contact Me</a></p> -->
+    </footer>
+
+    <!-- <script>
+        document.querySelectorAll('.project-box').forEach(projectBox => {
+            const carousel = projectBox.querySelector('.carousel');
+            if (!carousel) return;
+
+            const images = carousel.querySelector('.carousel-images');
+            const prevButton = carousel.querySelector('.prev');
+            const nextButton = carousel.querySelector('.next');
+            const breadcrumbs = carousel.querySelectorAll('.carousel-breadcrumbs button');
+            const totalImages = images.children.length;
+            let index = 0;
+            let autoScrollInterval;
+
+            function updateCarousel() {
+                const offset = -index * 100;
+                images.style.transform = `translateX(${offset}%)`;
+                breadcrumbs.forEach((breadcrumb, i) => {
+                    breadcrumb.classList.toggle('active', i === index);
+                });
+            }
+
+            function autoScroll() {
+                index = (index + 1) % totalImages;
+                updateCarousel();
+            }
+
+            let autoScrollInterval = setInterval(autoScroll, 3000);
+
+            prevButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index - 1 + totalImages) % totalImages;
+                updateCarousel();
+                autoScrollInterval = setInterval(autoScroll, 3000);
+            });
+
+            nextButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index + 1) % totalImages;
+                updateCarousel();
+                autoScrollInterval = setInterval(autoScroll, 5000);
+            });
+
+            breadcrumbs.forEach(breadcrumb => {
+                breadcrumb.addEventListener('click', () => {
+                    clearInterval(autoScrollInterval);
+                    index = parseInt(breadcrumb.dataset.index);
+                    updateCarousel();
+                    autoScrollInterval = setInterval(autoScroll, 3000);
+                });
+            });
+        });
+    </script> -->
+    <script>
+        document.querySelectorAll('.project-box').forEach(projectBox => {
+            const carousel = projectBox.querySelector('.carousel');
+            if (!carousel) return;
+
+            const images = carousel.querySelector('.carousel-images');
+            const prevButton = carousel.querySelector('.prev');
+            const nextButton = carousel.querySelector('.next');
+            const breadcrumbs = carousel.querySelectorAll('.carousel-breadcrumbs button');
+            const totalImages = images.children.length;
+            let index = 0;
+            let autoScrollInterval;
+
+            function updateCarousel() {
+                const offset = -index * 100;
+                images.style.transform = `translateX(${offset}%)`;
+                breadcrumbs.forEach((breadcrumb, i) => {
+                    breadcrumb.classList.toggle('active', i === index);
+                });
+            }
+
+            function autoScroll() {
+                index = (index + 1) % totalImages;
+                updateCarousel();
+            }
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        autoScrollInterval = setInterval(autoScroll, 3000);
+                    } else {
+                        clearInterval(autoScrollInterval);
+                    }
+                });
+            });
+
+            observer.observe(projectBox);
+
+            prevButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index - 1 + totalImages) % totalImages;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index + 1) % totalImages;
+                updateCarousel();
+            });
+
+            breadcrumbs.forEach(breadcrumb => {
+                breadcrumb.addEventListener('click', () => {
+                    clearInterval(autoScrollInterval);
+                    index = parseInt(breadcrumb.dataset.index);
+                    updateCarousel();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
