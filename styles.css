@@ -210,6 +210,15 @@ footer a {
 }
 
 
+@media screen and (max-width: 1500px) {
+	.gridz {
+        width: auto;
+        margin-left: 12rem;
+        margin-right: 12rem;
+      }
+}
+
+
 @media screen and (max-width: 1025px) {
 	.gridz {
         width: auto;

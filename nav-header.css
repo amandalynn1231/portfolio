@@ -58,7 +58,7 @@
 	margin: 8rem 16rem;
 	padding: 4rem 0;
 	width: auto;
-	line-height: 150%;
+	line-height: 200%;
 	color: #2b2a27;
 }
 
@@ -125,6 +125,18 @@ and (orientation: portrait) {
 
 }
 
+@media screen and (max-width: 1440px) {
+	.intro-copy {
+		font-size: 2rem;
+		margin: 8rem 16rem;
+		padding: 4rem 0;
+		width: auto;
+	}
+	.summary {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1025px) {
 	.intro-copy {
 		font-size: 2rem;
@@ -132,9 +144,6 @@ and (orientation: portrait) {
 		padding: 4rem 0;
 		width: auto;
 		line-height: 200%;
-	}
-	.summary {
-		width: 100%;
 	}
 }
 
