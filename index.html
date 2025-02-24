@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav-header.css">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="project-list.css">
 </head>
 <body>
     <header>
@@ -51,7 +50,7 @@
 
     <main class="project-list gridz">
         <div class="project-box">
-            <div class="carousel-mobile carousel">
+            <div class="carousel-mobile">
                 <div class="carousel-images">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1737927011/mobile-mockups_saxb6f.png" alt="Project One Screenshot 1">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1737928355/web-orders_hluzvg.png" alt="Project One Screenshot 2">
@@ -108,7 +107,7 @@
             </div>
         </div>
         <div class="project-box">
-            <div class="carousel-mobile carousel">
+            <div class="carousel-mobile">
                 <div class="carousel-images">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1736054558/Dashboard-Upload_Errors_Notifications_Copy_mslx9z.png" alt="Project One Screenshot 1">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1736054559/Upload_Data_Set-Site_Details_Ortho_o1z66h.png" alt="Project One Screenshot 2">
@@ -157,7 +156,7 @@
             </div>
         </div>
         <div class="project-box">
-            <div class="carousel-mobile carousel">
+            <div class="carousel-mobile">
                 <div class="carousel-images">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278057/rent-roll-video_n1xzwl.gif" alt="Project One Screenshot 1">
                     <img src="https://res.cloudinary.com/dxefmitas/image/upload/v1738278281/user-flow_w5359x.png" alt="Project One Screenshot 2">
@@ -407,7 +406,7 @@
     </script> -->
     <script>
         document.querySelectorAll('.project-box').forEach(projectBox => {
-            const carousel = projectBox.querySelector('.carousel, .carousel-mobile');
+            const carousel = projectBox.querySelector('.carousel');
             if (!carousel) return;
 
             const images = carousel.querySelector('.carousel-images');
@@ -463,6 +462,65 @@
                 });
             });
         });
+
+        document.querySelectorAll('.project-box').forEach(projectBox => {
+            const carousel = projectBox.querySelector('.carousel-mobile');
+            if (!carousel) return;
+
+            const images = carousel.querySelector('.carousel-images');
+            const prevButton = carousel.querySelector('.prev');
+            const nextButton = carousel.querySelector('.next');
+            const breadcrumbs = carousel.querySelectorAll('.carousel-breadcrumbs button');
+            const totalImages = images.children.length;
+            let index = 0;
+            let autoScrollInterval;
+
+            function updateCarousel() {
+                const offset = -index * 100;
+                images.style.transform = `translateX(${offset}%)`;
+                breadcrumbs.forEach((breadcrumb, i) => {
+                    breadcrumb.classList.toggle('active', i === index);
+                });
+            }
+
+            function autoScroll() {
+                index = (index + 1) % totalImages;
+                updateCarousel();
+            }
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        autoScrollInterval = setInterval(autoScroll, 3000);
+                    } else {
+                        clearInterval(autoScrollInterval);
+                    }
+                });
+            });
+
+            observer.observe(projectBox);
+
+            prevButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index - 1 + totalImages) % totalImages;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', () => {
+                clearInterval(autoScrollInterval);
+                index = (index + 1) % totalImages;
+                updateCarousel();
+            });
+
+            breadcrumbs.forEach(breadcrumb => {
+                breadcrumb.addEventListener('click', () => {
+                    clearInterval(autoScrollInterval);
+                    index = parseInt(breadcrumb.dataset.index);
+                    updateCarousel();
+                });
+            });
+        });
+        
     </script>
 </body>
 </html>

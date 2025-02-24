@@ -213,8 +213,8 @@ footer a {
 @media screen and (max-width: 1500px) {
 	.gridz {
         width: auto;
-        margin-left: 12rem;
-        margin-right: 12rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
       }
 }
 
@@ -248,6 +248,8 @@ footer a {
         position: relative;
         left: 50%;
         width: 70%;
+        overflow: hidden;
+        max-height: 38rem;
         margin: 3rem 1rem;
         transform: translateX(-50%);
     }
