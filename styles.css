@@ -42,8 +42,6 @@ header img {
 } */
 
 .link {
-    /* color: #007f5f; */
-    /* color: #4900f2; */
     color: #00afb9;
 }
 
@@ -52,9 +50,6 @@ header img {
 }
 
 .button-primary {
-    /* background-color: #060e57; */
-    /* background-color: #331502; */
-    /* background-color: #023047; */
     border: solid 2px #2b2a27;
     color: #2b2a27;
     padding: 1rem 2rem;
@@ -64,11 +59,14 @@ header img {
 }
 
 .button-primary:hover {
-    /* background-color: #3802fc; */
-    /* background-color: #ff312e; */
-    /* background-color: #4400ff; */
     background-color: #2b2a27;
     color: #fff;
+}
+
+.gridz {
+  width: auto;
+  margin-left: 16rem;
+  margin-right: 16rem;
 }
 
 .project-box {
@@ -115,6 +113,10 @@ header img {
     font-size: 14px;
     color: #00949c;
     /* color: #007f5f; */
+}
+
+.carousel-mobile {
+    display: none;
 }
 
 .carousel {
@@ -180,9 +182,6 @@ header img {
 .grid-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* min-height: 100vh; */
-    /* background-color: #f3f4f6; */
     margin: 0;
 }
 
@@ -208,4 +207,69 @@ footer {
 footer a {
     color: #333;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 1025px) {
+	.gridz {
+        width: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+    .project-box {
+        display: inline-block;
+        margin: 4rem 0;
+    }
+
+    .project-description {
+        position: relative;
+        width: 70%;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 70%;
+        margin: 3rem 1rem;
+        transform: translateX(-50%);
+    }
+	
+}
+
+@media screen and (max-width: 425px) {
+	.gridz {
+        width: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+    .project-box {
+        display: inline-block;
+        margin: 2rem 0;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .carousel-mobile {
+        width: 100%;
+    }
+
+    .grid {
+        display: block;
+    }
+    .shot {
+        margin: 1rem 0;
+    }
+	
 }

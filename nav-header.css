@@ -125,6 +125,29 @@ and (orientation: portrait) {
 
 }
 
+@media screen and (max-width: 1025px) {
+	.intro-copy {
+		font-size: 2rem;
+		margin: 8rem 4rem;
+		padding: 4rem 0;
+		width: auto;
+		line-height: 200%;
+	}
+	.summary {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.intro-copy {
+		margin: 6rem 2rem;
+		padding: 0;
+	}
+	.summary {
+		font-size: 16px;
+	}
+}
+
 
 
 
